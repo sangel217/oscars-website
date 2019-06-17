@@ -1,13 +1,13 @@
 .abc{
     align-content: left;
-    height: 35px;
+    height: 50px;
 }
 
 .oscars {
     align-content: left;
-    height: 50px;
+    height: 70px;
 }
 
-.countdown{
-    align-content: center;
+.row2{
+    background-color: blanchedalmond;
 }

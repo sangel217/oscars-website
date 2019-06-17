@@ -4,10 +4,11 @@
     <div class="row">
       <table style='width: 100%'><tr><img src="../assets/abc.png" class="abc"> <span class="line">|</span> <img src="../assets/oscars.png" class="oscars"> <th>Home</th><th>Winners</th><th>News</th><th>Red Carpet</th><th>Video</th><th>Photos</th><th>Email Sign-up</th></tr></table>
     </div>
-    <div class="row">
+    <div class="row2">
       <table style='width: 100%'><tr><th>LIVE SUNDAY <br>
-        {{nextOscar | date: 'MMM d, y, h:mm:ss a'}}</th><th class="countdown">{{days}}days {{hours}}hours {{minutes}}minutes {{seconds}}seconds</th><th><img src="../assets/twitter.svg"><img src="../assets/instagram.svg"><img src="../assets/fb.svg"></th></tr></table>
+        {{nextOscar | date: 'MMM d, y, h:mm:ss a'}}</th><th><img src="../assets/rolex.jpeg" style="height: 80px;"></th><th>{{days}}days <br> {{hours}}hours <br> {{minutes}}minutes</th><th><img src="../assets/twitter.svg">  <img src="../assets/instagram.svg">  <img src="../assets/fb.svg"></th></tr></table>
     </div>
   </div>
  </div>
+ <app-article [childArticleList]="masterArticleList"></app-article>
 <app-winner-list [childOscarList]="masterOscarList"></app-winner-list>
