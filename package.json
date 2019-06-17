@@ -23,7 +23,11 @@
     "@angular/router": "^5.2.0",
     "boostrap": "^2.0.0",
     "core-js": "^2.4.1",
+    "jquery": "^3.4.1",
+    "ng": "0.0.0",
+    "popper.js": "^1.15.0",
     "rxjs": "^5.5.6",
+    "serve": "^11.0.1",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
