@@ -1,14 +1,39 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
   <div class="container">
     <div class="row">
-      <table style='width: 100%'><tr><img src="../assets/abc.png" class="abc"> <span class="line">|</span> <img src="../assets/oscars.png" class="oscars"> <th>Home</th><th>Winners</th><th>News</th><th>Red Carpet</th><th>Video</th><th>Photos</th><th>Email Sign-up</th></tr></table>
+      <table style='width: 100%'><tr><img src="../assets/abc.png" class="abc"> <span class="line">|</span> <img src="../assets/oscars.png" class="oscars"> <th><a routerLink="">Home</a></th><th><a routerLink="winners">Winners</a></th><th><a routerLink="news">News</a></th><th>Red Carpet</th><th>Video</th><th>Photos</th><th>Email Sign-up</th></tr></table>
     </div>
     <div class="row2">
       <table style='width: 100%'><tr><th>LIVE SUNDAY <br>
-        {{nextOscar | date: 'MMM d, y, h:mm:ss a'}}</th><th><img src="../assets/rolex.jpeg" style="height: 80px;"></th><th>{{days}}days <br> {{hours}}hours <br> {{minutes}}minutes</th><th><img src="../assets/twitter.svg">  <img src="../assets/instagram.svg">  <img src="../assets/fb.svg"></th></tr></table>
+        {{nextOscar | date: 'MMM d, y'}}</th><th><img src="../assets/rolex.jpeg" style="height: 80px;"></th><th>{{days}} days <br> {{hours}} hours <br> {{minutes}} minutes</th><th><img src="../assets/twitter.svg">  <img src="../assets/instagram.svg">  <img src="../assets/fb.svg"></th></tr></table>
     </div>
+    <router-outlet></router-outlet>
   </div>
- </div>
- <app-article [childArticleList]="masterArticleList"></app-article>
-<app-winner-list [childOscarList]="masterOscarList"></app-winner-list>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+<footer>
+  <nav>
+    <div class="toggle"><i class="fas fa-bars menu"></i></div>
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">NOMINEES</a></li>
+      <li><a href="#">VIDEO</a></li>
+      <li><a href="#">PHOTOS</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">CONTACT US</a></li>
+      <li><a href="#">TERMS OF USE</a></li>
+      <li><a href="#">PRIVACY</a></li>
+    </ul>
+  </nav>  
+</footer>
+      
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  
+  <script>
+      $(document).ready(function() {
+        $(".menu").click(function() {
+          $("ul").slideToggle().toggleClass('active');    
+        });
+      });
+  </script>
+ 

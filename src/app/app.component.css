@@ -11,3 +11,19 @@
 .row2{
     background-color: blanchedalmond;
 }
+
+* {margin: 0;padding: 0;}    
+nav {background: lightgray;width: 100%;}
+ul {padding: 0;margin: 0 auto;width: 80%;}
+ul li {list-style: none;display: inline-block;padding:20px;}
+ul li:hover {background:goldenrod;}
+ul li a {color: darkgray;text-decoration: none;}
+.toggle {width: 100%;padding: 10px 20px;background: lightgray;text-align: right;box-sizing:border-box;color: darkgray;font-size: 30px;display:none;}
+
+
+@media only screen and (max-width: 768px) {
+  .toggle {display: block;}
+  ul {width: 100%;display: none;}
+  ul li {display: block;text-align: center;}
+  .active {display: block;}
+}

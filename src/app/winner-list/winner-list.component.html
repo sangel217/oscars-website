@@ -3,11 +3,12 @@
 </ul> -->
 
 
+
 <div class="container">
 		<div class="row">
 			<div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ]">
 				<ul class="event-list">
-					<li *ngFor="let currentWinner of childOscarList">
+					<li *ngFor="let currentWinner of oscarList">
 						<time datetime="2014-07-20">
 							<span class="day">{{currentWinner.oscarYear | date: 'd'}}</span>
 							<span class="month">{{currentWinner.oscarYear | date: 'MMM'}}</span>
