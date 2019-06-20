@@ -12,6 +12,11 @@
     background-color: blanchedalmond;
 }
 
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
 * {margin: 0;padding: 0;}    
 nav {background: lightgray;width: 100%;}
 ul {padding: 0;margin: 0 auto;width: 80%;}
