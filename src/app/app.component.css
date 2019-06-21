@@ -1,3 +1,7 @@
+.container {
+    padding: 15px;
+}
+
 .abc{
     align-content: left;
     height: 50px;
@@ -5,7 +9,7 @@
 
 .oscars {
     align-content: left;
-    height: 70px;
+    height: 60px;
 }
 
 .row2{
@@ -13,6 +17,7 @@
 }
 
 footer{
+    display: block;
     position: fixed;
     bottom: 0;
 }

@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 /*Request Form*/
-
+.RequestForm {
+  align-content: left;
+}
 .RequestForm h2 {
     background-color: goldenrod;
     color: black;
@@ -27,7 +29,7 @@
   }
   .RequestForm .Forms form textarea.form-control {
     height: auto;
-    resize: none;
+    /* resize: none; */
   }
   .RequestForm .Forms form button {
     border: none;
@@ -56,3 +58,5 @@
   .RequestForm .Forms form .form-control::-webkit-input-placeholder {
     color: #c7c7c7
   }
+
+  

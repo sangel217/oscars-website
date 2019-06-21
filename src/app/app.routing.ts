@@ -16,7 +16,7 @@ const appRoutes: Routes = [
         component: HomeComponent
     },
     {
-        path: 'winners',
+        path: 'oscars',
         component: WinnerListComponent
     },
     {
@@ -28,15 +28,15 @@ const appRoutes: Routes = [
         component: RedCarpetComponent
     },
     {
-        path: 'winners/:id',
+        path: 'oscars/:id',
         component: WinnerDetailComponent
     },
     {
-        path: 'article/:id',
+        path: 'articles/:id',
         component: ArticleDetailComponent
     },
     {
-        path: 'red-carpet/:id',
+        path: 'red-carpets/:id',
         component: RedCarpetDetailComponent
     },
     {

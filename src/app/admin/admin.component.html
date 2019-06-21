@@ -26,6 +26,56 @@
           </div>
         </div>
       </div>
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <div class="RequestForm">
+          <h2>Add a News Article</h2>
+          <div class="Forms">
+            <form>
+              <div class="form-group">
+                <input class="form-control" placeholder="Title" #newTitle>
+              </div>
+              <div class="form-group">
+                <input class="form-control" placeholder="Author" #newAuthor>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Report" #newReport row="300"></textarea>
+              </div>
+              <div class="form-group">
+                <input class="form-control" placeholder="Image File Path" #newImage>
+              </div>
+              <div class="form-group">
+                <input class="form-control" placeholder="Year" type="date" #newYear>
+              </div>
+              <button (click)="submitArticle(newTitle.value, newAuthor.value, newReport.value, newImage.value, newYear.value)">Add Article</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <div class="RequestForm">
+          <h2>Add a New Oscar Winner</h2>
+          <div class="Forms">
+            <form>
+              <div class="form-group">
+                <input class="form-control" placeholder="Category" #newCategory>
+              </div>
+              <div class="form-group">
+                <input class="form-control" placeholder="Movie" #newMovie>
+              </div>
+              <div class="form-group">
+                <input class="form-control" placeholder="Name/s" #newName>
+              </div>
+              <div class="form-group">
+                <input class="form-control" placeholder="Year" type="date" #newYear>
+              </div>
+              <div class="form-group">
+                <input class="form-control" placeholder="Image File Path" #newImage>
+              </div>
+              <button (click)="submitWinner(newCategory.value, newMovie.value, newName.value, newYear.value, newImage.value)">Add Winner</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
