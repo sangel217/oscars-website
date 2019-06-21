@@ -41,37 +41,37 @@
                 <textarea class="form-control" placeholder="Report" #newReport row="300"></textarea>
               </div>
               <div class="form-group">
-                <input class="form-control" placeholder="Image File Path" #newImage>
+                <input class="form-control" placeholder="Image File Path" #newArticleImage>
               </div>
               <div class="form-group">
-                <input class="form-control" placeholder="Year" type="date" #newYear>
+                <input class="form-control" placeholder="Year" type="date" #newArticleYear>
               </div>
-              <button (click)="submitArticle(newTitle.value, newAuthor.value, newReport.value, newImage.value, newYear.value)">Add Article</button>
+              <button (click)="submitArticle(newTitle.value, newAuthor.value, newReport.value, newArticleImage.value, newArticleYear.value)">Add Article</button>
             </form>
           </div>
         </div>
       </div>
       <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
         <div class="RequestForm">
-          <h2>Add a New Oscar Winner</h2>
+          <h2>Add a New Red Carpet Moment</h2>
           <div class="Forms">
             <form>
               <div class="form-group">
-                <input class="form-control" placeholder="Category" #newCategory>
+                <input class="form-control" placeholder="Red Carpet Category" #newRedCarpetCategory>
               </div>
               <div class="form-group">
-                <input class="form-control" placeholder="Movie" #newMovie>
+                <input class="form-control" placeholder="Red Carpet Title" #newRedCarpetTitle>
               </div>
               <div class="form-group">
-                <input class="form-control" placeholder="Name/s" #newName>
+                <input class="form-control" placeholder="Red Carpet Description" #newRedCarpetDescription>
               </div>
               <div class="form-group">
-                <input class="form-control" placeholder="Year" type="date" #newYear>
+                <input class="form-control" placeholder="Red Carpet Date" type="date" #newRedCarpetDate>
               </div>
               <div class="form-group">
-                <input class="form-control" placeholder="Image File Path" #newImage>
+                <input class="form-control" placeholder="Image File Path" #newRedCarpetImage>
               </div>
-              <button (click)="submitWinner(newCategory.value, newMovie.value, newName.value, newYear.value, newImage.value)">Add Winner</button>
+              <button (click)="submitRedCarpet(newRedCarpetCategory.value, newRedCarpetTitle.value, newRedCarpetDescription.value, newRedCarpetDate.value, newRedCarpetImage.value)">Add Winner</button>
             </form>
           </div>
         </div>

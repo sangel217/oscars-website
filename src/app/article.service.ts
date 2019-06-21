@@ -4,12 +4,12 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 @Injectable()
 export class ArticleService {
+  articles: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) { 
     this.articles = database.list('articles');
   }
 
-  articles: FirebaseListObservable<any[]>;
   getArticles(){
     return this.articles;
   }
@@ -18,7 +18,7 @@ export class ArticleService {
     this.articles.push(newArticle);
   }
 
-  getArticleById(albumId: string){
+  getArticleById(articleId: string){
     return this.database.object('articles/' + articleId);
   }
 
