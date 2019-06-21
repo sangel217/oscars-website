@@ -1,3 +1,3 @@
 export class Article{
-    constructor(public title: string, public author: string, public report: string, public image: string) { }
+    constructor(public title: string, public author: string, public report: string, public image: string, public oscarDate: Date) { }
 }

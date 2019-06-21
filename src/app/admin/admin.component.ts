@@ -2,12 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { OscarService } from '../oscar.service';
 import { Oscar } from '../models/oscar.models';
 import { Article } from '../models/article.models';
+import { ArticleService } from '../article.service';
 
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css'],
-  providers: [OscarService]
+  providers: [OscarService, ArticleService]
 })
 export class AdminComponent implements OnInit {
 
