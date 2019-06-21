@@ -12,7 +12,7 @@ import { ArticleService } from '../article.service';
 })
 export class AdminComponent implements OnInit {
 
-  constructor(private oscarService: OscarService) { }
+  constructor(private oscarService: OscarService, private articleService: ArticleService) { }
 
   ngOnInit() {
   }
