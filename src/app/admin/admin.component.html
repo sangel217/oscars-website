@@ -21,7 +21,7 @@
               <div class="form-group">
                 <input class="form-control" placeholder="Image File Path" #newImage>
               </div>
-              <button (click)="submitWinner(newCategory.value, newMovie.value, newName.value, newYear.value, newImage.value)">Add Winner</button>
+              <button (click)="submitWinner(newCategory.value, newMovie.value, newName.value, newYear.value, newImage.value); newCategory.value=''; newMovie.value=''; newName.value=''; newYear.value=null; newImage.value=''">Add Winner</button>
             </form>
           </div>
         </div>
@@ -46,7 +46,7 @@
               <div class="form-group">
                 <input class="form-control" placeholder="Year" type="date" #newArticleYear>
               </div>
-              <button (click)="submitArticle(newTitle.value, newAuthor.value, newReport.value, newArticleImage.value, newArticleYear.value)">Add Article</button>
+              <button (click)="submitArticle(newTitle.value, newAuthor.value, newReport.value, newArticleImage.value, newArticleYear.value); newTitle.value=''; newAuthor.value=''; newReport.value=''; newArticleImage.value=''; newArticleYear.value=null">Add Article</button>
             </form>
           </div>
         </div>
@@ -71,7 +71,7 @@
               <div class="form-group">
                 <input class="form-control" placeholder="Image File Path" #newRedCarpetImage>
               </div>
-              <button (click)="submitRedCarpet(newRedCarpetCategory.value, newRedCarpetTitle.value, newRedCarpetDescription.value, newRedCarpetDate.value, newRedCarpetImage.value)">Add Red Carpet</button>
+              <button (click)="submitRedCarpet(newRedCarpetCategory.value, newRedCarpetTitle.value, newRedCarpetDescription.value, newRedCarpetDate.value, newRedCarpetImage.value); newRedCarpetCategory.value=''; newRedCarpetTitle.value=''; newRedCarpetDescription.value=''; newRedCarpetDate.value=null; newRedCarpetImage.value=''">Add Red Carpet</button>
             </form>
           </div>
         </div>
@@ -79,3 +79,7 @@
     </div>
   </div>
 </section>
+
+<div>
+  <app-winner-list></app-winner-list>
+</div>

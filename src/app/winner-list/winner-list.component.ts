@@ -20,6 +20,6 @@ export class WinnerListComponent implements OnInit {
   }
 
   goToDetailPage(clickedWinner: Oscar){
-    //this.router.navigate(['oscars', clickedWinner.$key])
+    this.router.navigate(['oscars', clickedWinner.$key])
   }
 }

@@ -7,7 +7,8 @@ import { ArticleService } from '../article.service';
 @Component({
   selector: 'app-article',
   templateUrl: './article.component.html',
-  styleUrls: ['./article.component.css']
+  styleUrls: ['./article.component.css'],
+  providers: [ArticleService]
 })
 export class ArticleComponent implements OnInit {
   articles: FirebaseListObservable<any[]>;

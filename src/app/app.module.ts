@@ -17,6 +17,7 @@ import { WinnerDetailComponent } from './winner-detail/winner-detail.component';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
 import { RedCarpetDetailComponent } from './red-carpet-detail/red-carpet-detail.component';
 import { AdminComponent } from './admin/admin.component';
+import { EditOscarComponent } from './edit-oscar/edit-oscar.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -35,7 +36,8 @@ export const firebaseConfig = {
     WinnerDetailComponent,
     ArticleDetailComponent,
     RedCarpetDetailComponent,
-    AdminComponent
+    AdminComponent,
+    EditOscarComponent
   ],
   imports: [
     BrowserModule,
