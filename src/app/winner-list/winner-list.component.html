@@ -3,15 +3,19 @@
 			<div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ]">
 				<ul class="event-list">
 					<li *ngFor="let winner of oscars | async" (click)="goToDetailPage(winner)">
+						<div *ngIf="currentRoute === '/admin'">
+							{{winner.category}}
+							<app-edit-oscar></app-edit-oscar>
+						</div>
 						<time datetime="2014-07-20">
 							<span class="day">{{winner.oscarYear | date: 'd'}}</span>
 							<span class="month">{{winner.oscarYear | date: 'MMM'}}</span>
 							<span class="year">{{winner.oscarYear | date: 'yyyy'}}</span>              
 						</time>
-            <img src= {{winner.image}}>
+            			<img src= {{winner.image}}>
 						<div class="info">
-              <h2 class="title">{{winner.category}}</h2>
-              <h4 class="winner">{{winner.name}}</h4>
+              				<h2 class="title">{{winner.category}}</h2>
+              				<h4 class="winner">{{winner.name}}</h4>
 							<p class="desc">{{winner.movie}}</p>
 						</div>
 					</li>
@@ -19,3 +23,5 @@
 			</div>
 		</div>
 	</div>
+	
+	
