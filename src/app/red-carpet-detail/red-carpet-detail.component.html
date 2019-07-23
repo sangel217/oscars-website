@@ -1,3 +1,6 @@
-<p>
-  red-carpet-detail works!
-</p>
+<div class="container">
+    <img src={{(redCarpetToDisplay|async)?.photo}}>
+    <h3>{{(redCarpetToDisplay | async)?.category}}</h3>
+    <h4>{{(redCarpetToDisplay | async)?.title}}</h4>
+    <p>{{(redCarpetToDisplay | async)?.description}}</p>
+</div>

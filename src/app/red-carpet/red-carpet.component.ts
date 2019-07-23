@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { RedCarpetService } from '../red-carpet.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { Router } from '@angular/router';
-import { RedCarpet } from '../models/red-carpet.models';
 
 @Component({
   selector: 'app-red-carpet',
@@ -19,8 +18,8 @@ export class RedCarpetComponent implements OnInit {
     this.redCarpets = this.redCarpetService.getRedCarpets();
   }
 
-  goToDetailPage(clickedRedCarpet: RedCarpet){
-    // this.router.navigate(['redCarpets', clickedRedCarpet.$key])
+  goToDetailPage(clickedRedCarpet){
+    this.router.navigate(['redCarpets', clickedRedCarpet.$key])
   }
 
 }

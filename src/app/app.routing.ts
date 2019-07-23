@@ -36,7 +36,7 @@ const appRoutes: Routes = [
         component: ArticleDetailComponent
     },
     {
-        path: 'red-carpets/:id',
+        path: 'redCarpets/:id',
         component: RedCarpetDetailComponent
     },
     {

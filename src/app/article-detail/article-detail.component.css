@@ -1,0 +1,10 @@
+hr {
+    border-top: 1px solid goldenrod;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h4{
+    color: goldenrod;
+}

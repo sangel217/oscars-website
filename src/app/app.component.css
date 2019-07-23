@@ -18,7 +18,7 @@
 
 footer{
     display: block;
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
 

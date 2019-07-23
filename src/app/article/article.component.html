@@ -1,22 +1,11 @@
 <div class="container main">
     <div class="row">
-        <div class="col-sm-6">
-           <img src="../assets/greenbook.jpg" alt="" class="img-responsive center-block">
-           <!-- <h2>{{articleList.title}}</h2> -->
+        <div class="col-sm-6" *ngFor="let article of articles | async" (click)="goToDetailPage(article)">
+           <img src={{article.image}} alt="" class="img-responsive center-block">
+           <h2>{{article.title}}</h2>
         </div>
-        <div class="row col-sm-6">
-            <div class="col-xs-6">
-              <!-- <img src={{articleList.image}} alt="" class="img-responsive"> -->
-            </div>
-            <div class="col-xs-6">
-              <img src="../assets/highlights.jpg" alt="" class="img-responsive">
-            </div>
-            <div class="col-xs-6">
-              <img src="../assets/ladygaga.jpg" alt="" class="img-responsive">
-            </div>
-            <div class="col-xs-6">
-              <img src="../assets/angelabasset.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
+    </div>
+    <div class="row">
+      <app-winner-list></app-winner-list>
     </div>
 </div>

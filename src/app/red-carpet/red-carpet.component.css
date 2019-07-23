@@ -1,0 +1,29 @@
+.header {
+    color: goldenrod;
+    text-align: center;
+}
+h2{
+    color: goldenrod;
+}
+
+img {
+    max-width: 50%;
+}
+
+.container{
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    top: 95%;
+    left: 60%;
+    transform: translate(-70%, -70%);
+    font-size: 15px;
+}
+
+.featured{
+    padding-bottom: 10%;
+}

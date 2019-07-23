@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
-import { Oscar } from '../models/oscar.models';
 import { OscarService } from '../oscar.service';
-import { FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-winner-detail',
@@ -22,6 +20,7 @@ export class WinnerDetailComponent implements OnInit {
       this.oscarId = urlParameters['id'];
     });
     this.oscarToDisplay = this.oscarService.getOscarById(this.oscarId);
+    console.log(this.oscarToDisplay);
    }
 
 }

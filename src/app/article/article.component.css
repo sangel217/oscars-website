@@ -1,3 +1,4 @@
-.main .img-responsive {
-    margin-bottom: 30px;
+.img-responsive .center-block {
+    border-style: outset;
+    border-color: goldenrod;
 }

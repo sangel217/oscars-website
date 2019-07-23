@@ -19,7 +19,7 @@ export class RedCarpetService {
   }
 
   getRedCarpetById(redCarpetId: string){
-    return this.database.object('red-carpets/' + redCarpetId)
+    return this.database.object('redCarpets/' + redCarpetId)
   }
 
 }

@@ -1,3 +1,11 @@
-<p>
-  red-carpet works!
-</p>
+<div class="header">
+    <h1>RED CARPET 2019</h1>
+</div>
+<div class="featured">
+  <h2>Featured Gallery</h2>
+  <div *ngFor="let redcarpet of redCarpets | async" class="container" (click)="goToDetailPage(redcarpet)">
+    <img src={{redcarpet.photo}}>
+    <div class="text">{{redcarpet.title}}</div>
+  </div>
+</div>
+

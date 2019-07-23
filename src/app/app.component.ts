@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Oscar } from './models/oscar.models';
-import { Article } from './models/article.models';
+import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',

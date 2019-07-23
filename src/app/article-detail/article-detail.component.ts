@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ArticleService } from '../article.service';
 import { ActivatedRoute, Params} from '@angular/router';
 import { Location } from '@angular/common';
-import { Article } from '../models/article.models';
-import { FirebaseObjectObservable } from 'angularfire2/database';
+
 
 @Component({
   selector: 'app-article-detail',

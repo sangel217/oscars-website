@@ -1,3 +1,8 @@
-<p>
-  article-detail works!
-</p>
+<div>
+  <img src={{(articleToDisplay|async)?.image}} >
+  <h4>{{(articleToDisplay | async)?.title}}</h4>
+  <p>By: {{(articleToDisplay | async)?.author}}</p>
+  <p>{{(articleToDisplay | async)?.oscarDate}}</p>
+  <hr>
+  <p>{{(articleToDisplay| async)?.report}}</p>
+</div>
