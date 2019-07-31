@@ -35,7 +35,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 email: sangel217@hotmail.com
 
-##License
+## License
 
 Licensed under MIT
 Copyright 2019 Sarah Angel
